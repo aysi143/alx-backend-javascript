@@ -1,4 +1,3 @@
-//Let's use the es6 in a cutest way
 import signUpUser from './4-user-promise';
 import uploadPhoto from './5-photo-reject';
 
