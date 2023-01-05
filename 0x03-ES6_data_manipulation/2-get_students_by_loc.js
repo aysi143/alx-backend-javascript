@@ -1,5 +1,9 @@
-import getListStudents from './0-get_list_students';
+const getStudentsByLocation = (students, city) => {
+  const studentsLocation = students.filter(
+    (student) => student.location === city,
+  );
 
-export default function getStudentsByLocation(student = getListStudents(), city) {
-  return student.filter((el) => el.location === city);
-}
+  return studentsLocation;
+};
+
+export default getStudentsByLocation;

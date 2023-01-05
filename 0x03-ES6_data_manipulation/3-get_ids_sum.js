@@ -1,5 +1,9 @@
-import getListStudents from './0-get_list_students';
+const getStudentIdsSum = (students) => {
+  const all = students
+    .map((student) => student.id)
+    .reduce((studentPrev, studentCurrent) => studentPrev + studentCurrent);
 
-export default function getStudentIdsSum(student = getListStudents()) {
-  return student.reduce((current, next) => current + next.id, 0);
-}
+  return all;
+};
+
+export default getStudentIdsSum;
